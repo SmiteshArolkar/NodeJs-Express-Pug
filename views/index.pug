@@ -1,3 +1,9 @@
-div.container 
-   p#hello hello Pug!
-   button.btn.btn-blue  click Me
+extends default 
+
+block content 
+  div.container 
+     p#hello hello Pug! Name Passed is #{name}
+     button.btn.btn-blue  click Me
+     img(src="" alt=`This is ${name}`)
+
+
